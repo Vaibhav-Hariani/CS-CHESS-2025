@@ -1,0 +1,5 @@
+https://hong3cooper.github.io/ECE160-Spring2024-Lesson1/
+https://en.wikipedia.org/wiki/Variable_(computer_science)
+https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search
+https://www.geeksforgeeks.org/binary-search/
+https://en.cppreference.com/w/cpp/language/for

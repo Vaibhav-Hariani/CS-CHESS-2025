@@ -129,14 +129,31 @@ You may work in groups, or work alone.
 
 [comment]: # (|||)
 
-## Example algorithm: Finding numbers
+## Example solution
+
+[comment]: # (|||)
+
+## Lets review: Fibonnaci
+
+
+
+[comment]: # (!!!)
+
+## A puzzle! Finding numbers
 
 Ok, heres a scenario: Lets say we have a computer with a clock speed of
 `1 Hz`, or 1 calculation per second. This is our only tool for getting into 
 a room which has a passcode thats a random number between 1 & 100. 
 If we guess wrong, it tells us "higher" or "lower", to indicate what our 
-next guess could be (provided by a built-in `bool guess(int)` function. 
-How do we break in?
+next guess could be (provided by a built-in `bool guess(int try)` function. 
+How do we break in, taking as little time as possible?
+
+Note:
+if this is too easy or if someone finishes really early, change it up:
+It now generates a *determined* `n` number of numbers. 
+`guess` has a second arg, `int position`. 
+All `n` numbers must add to a *determined* sum to let you in. 
+`direction` tells you how close you are to this sum. 
 
 [comment]: # (|||)
 

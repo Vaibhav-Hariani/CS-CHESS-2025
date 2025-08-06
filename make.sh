@@ -1,4 +1,4 @@
-#!/bin/bash -x 
+#!/bin/bash 
 HELP=$(
 cat << EOF
 	usage: $0 <presentation dir>\n\n
@@ -26,7 +26,7 @@ if [ ${1: -1} = '/'  ]; then
 	echo $1 | head -c-2 | set -- - # clears rest of args
 fi
 
-ARGS=--output_dir\ ./$1/out
+ARGS=--output_dir\ ./$1_out/
 if [[ -d ./$1/media ]]; then
 	ARGS=$ARGS\ --include\ ./$1/media
 fi

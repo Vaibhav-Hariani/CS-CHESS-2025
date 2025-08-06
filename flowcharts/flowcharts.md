@@ -1,46 +1,67 @@
 [comment]: # (THEME = black)
 [comment]: # (CODE_THEME = base16/zenburn)
 
-# Cooper CHESS CS: Flowcharts
-August 2024     
-James Ryan, Vaibhav Hariani
+# Cooper CHESS CS: Day 1
+August 2025     
+Vaibhav Hariani
 
 [comment]: # (!!!)
 
 ## Brief Intro
 
-Hi, we're two Class of 26 EE students, Vaibhav Hariani [vaibhav.hariani@cooper.edu] 
-\& James Ryan [james.ryan@cooper.edu]. 
+Welcome to Chess! 
 
+I'm Vaibhav Hariani [vaibhav.hariani@cooper.edu], a senior EE. 
 Throughout the lecture, please do not be afraid to ask any questions!
 
 [comment]: # (!!!)
+## Some basic objectives before we start:
 
-## What even \*IS\* a flowchart, anyways? Why should I care? Who even are you people?
-   
+[comment]: # (!!!)
+
+- This crash course is designed for you to learn how to break down a CS problem, and approach it!
+
+- For some of you, these lessons might seem unnecessary. 
+- For others, this might be too much. 
+- Work with each other, and I hope everyone comes out of this with something.
+- Homework: I'm not grading anything, but it should help drill things home! 
+
 [comment]: # (|||)
+## What is a programming language? 
 
+## Have you used any before?
+
+## What are they good for?
+  
+[comment]: # (!!!)
+- Algorithms are sets of rules to be followed, that allow us (or machines) to complete certain tasks. 
+
+- Before we get into programming (and CS), let's talk about some simple algorithms you use all the time. 
+
+- Then, we'll learn some of the tools computer scientists use to solve problems.   
+
+[comment]: # (|||)
+## Lesson 1.1: Flowcharts
 ![basically, this.](media/xkdc.png)
 
 Note:
 WE DONT CARE ABOUT SPECIFICS!!!
-For now, just describe whats going on, theres a problem posed, and its being... 
-uh.. solved?
+For now, just describe whats going on, theres a problem posed, and its being solved.
 
-[comment]: # (|||)
+[comment]: # (!!!)
 
 Flowcharts let us take large, complex problems, and break them down into chunks.
 
 In the context of computer science, we can use these to think about how to 
 implement our goals into code.
 
-[comment]: # (|||)
+[comment]: # (!!!)
 
 ## Ok, how do I start making one of these?
 
 - Determine the problem
 - Consider each factor involved
-  - What are the inputs?
+- What are the inputs?
 - From that, consider the steps involved to process your input into an output, 
 from start to end.
 
@@ -48,7 +69,7 @@ from start to end.
 
 ### Flowchart Operators: Terminal
 
-<div style="font-size: .4em;">
+<div style="font-size: .8em;">
 (as according to ISO 5807.. your mileage may vary.....)
 </div>
 
@@ -81,26 +102,18 @@ the operator.
 The I/O (in/out) operator represents either the input or output of information 
 into our workflow.
 
-[comment]: # (!!!)
-
-## Another Look
-![basically, this.](media/xkdc.png)
-
 Note:
-Walk through step by step and outline how we see each block being used.
-Comment how XKCD ignores ISO 5807 with the start blocks and io
-However, CLARITY is the most important part. Despite not using standards, 
-we can tell whats going on lol
+The diagram we've shown INTENTIONALLY violates ISO5807: The start blocks and I/O are all different!
+Standards are secondary to CLARITY. We can still understand the process! 
 
 [comment]: # (|||)
 
-### Your turn:
-
+## Your turn:
 Consider you're at home, and need to decide to go grocery shopping or not. 
 
 What do you need in order to get that done? (eg, do i have time?) Can you do it? 
-Make a flowchart to figure that out.
-
-Get into groups, or do it yourself, up to you. Good luck!
+Make a flowchart to figure that out. 
 
 [comment]: # (!!!)
+
+

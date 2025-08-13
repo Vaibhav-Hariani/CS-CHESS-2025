@@ -27,18 +27,21 @@ Throughout the lecture, please do not be afraid to ask any questions!
 - Homework: I'm not grading anything, but it should help drill things home! 
 
 [comment]: # (|||)
-## What is a programming language? 
+### What is a programming language? 
 
-## Have you used any before?
+### Have you used any before?
 
-## What are they good for?
-  
+### What are they good for?
+
+[comment]: # (|||)
+A programming language allows us, programmers/computer scientists, to define algorithms that computers can follow.
+
 [comment]: # (!!!)
 - Algorithms are sets of rules to be followed, that allow us (or machines) to complete certain tasks. 
 
 - Before we get into programming (and CS), let's talk about some simple algorithms you use all the time. 
 
-- Then, we'll learn some of the tools computer scientists use to solve problems.   
+- Then, we'll learn some of the tools computer scientists use to define algorithms.   
 
 [comment]: # (|||)
 ## Lesson 1.1: Flowcharts
@@ -106,14 +109,42 @@ Note:
 The diagram we've shown INTENTIONALLY violates ISO5807: The start blocks and I/O are all different!
 Standards are secondary to CLARITY. We can still understand the process! 
 
-[comment]: # (|||)
+[comment]: # (!!!)
 
 ## Your turn:
 Consider you're at home, and need to decide to go grocery shopping or not. 
 
 What do you need in order to get that done? (eg, do i have time?) Can you do it? 
-Make a flowchart to figure that out. 
+Make a flowchart to express that logical flow. Group up!
 
 [comment]: # (!!!)
+## Lesson 1.2: State Machines
+
+[comment]: # (|||)
+Flowcharts are useful, but it's very difficult to express waiting, or triggers, effectively.
+- If I'm trying to design a robot to walk around New York, I need to show that it will stop at a red hand, and keep checking until we see a white figure.  
+
+[comment]: # (|||)
+For these problems, we can use state machines! State machines are considerably simpler to build: only two things to consider (actions, triggers).
+
+[comment]: # (|||)
+- List our different triggers and actions:
+    - Actions: continue forward, turn left/right, check if it's safe to cross, stop.
+    - Triggers: Getting to the end of the block, seeing a stop/walk light, can all change the current action.
+
+    Actions are circles, and triggers are lines that connect them.
+
+[comment]: # (|||)
+
+![basically, this.](media/sm.png)
+
+[comment]: # (!!!)
+Your Turn: Build a state machine for a self-driving car. 
+
+Don't worry about hitting every single scenario: the overlying idea should be expressed. 
 
 
+[comment]: # (!!!)
+Homework: 
+    Take an everyday task, like the ones we've discussed, and express it as a both a flowchart and a state machine. Reach out to me on teams, discord, or email. We'll talk about it tomorrow.
+    

@@ -36,9 +36,10 @@ string myString = "Hello, world!";
 Notable types:
 
 ```cpp
-int // stores a number
+int // stores an integer value: no decimals
 string // stores a multi-character string, eg "Hello, world!"
 bool // boolean value - stores TRUE or FALSE
+float //stores a value with decimal places.   
 ```
 
 [comment]: # (|||)
@@ -110,6 +111,23 @@ if (condition) {
 move on;
 ```
 
+[comment]: # (|||)
+
+## `functions`
+These let us express systems with an input and an output.
+```c
+//The first int tells us what we expect to get out: Return type.
+//The elements after <addition> tell us that we're expecting two numbers as inputs
+int multiplication(int num1, int num2) {
+    int return_value = 0;
+    for(int i = 0; i < num2; i++){
+        return_value = return_value + num1;
+    }
+    //return designates the output
+    return return_value;
+}
+```
+
 [comment]: # (!!!)
 
 ## Picking up from block diagrams...
@@ -135,8 +153,6 @@ You may work in groups, or work alone.
 
 ## Lets review: Fibonnaci
 
-
-
 [comment]: # (!!!)
 
 ## A puzzle! Finding numbers
@@ -145,7 +161,7 @@ Ok, heres a scenario: Lets say we have a computer with a clock speed of
 `1 Hz`, or 1 calculation per second. This is our only tool for getting into 
 a room which has a passcode thats a random number between 1 & 100. 
 If we guess wrong, it tells us "higher" or "lower", to indicate what our 
-next guess could be (provided by a built-in `bool guess(int try)` function. 
+next guess could be (provided by a built-in `bool guess(int try)` function). 
 How do we break in, taking as little time as possible?
 
 Note:
@@ -224,3 +240,11 @@ int crack_the_code_V2()
 ```
 
 [comment]: # (!!!)
+Homework: 2 problems. Email/teams with questions or solutions.
+
+1) You're trying to save up for a house (with that fancy post-Cooper salary). 
+    Write pseudocode for a function that accepts a salary, a saving percentage, and a home cost. Show how many months it will take to buy the home, given your savings. Assume that you deposit a percentage monthly, and that all money you deposit increases in value by 3% every year (divide by 12 for every month).
+[comment]: # (!!!)
+2) Challenge (Optional & Unexpected): In the towers of hanoi problem, there are 3 pegs. The first peg contains N disks, each one slightly larger than the one before it. You must move all the disks to the last peg. 
+
+Don't waste time on number two if you can't figure it out: It's the subject of our final lecture!

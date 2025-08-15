@@ -1,9 +1,9 @@
-#!/bin/bash 
+#!/bin/bash
 HELP=$(
 cat << EOF
 	usage: $0 <presentation dir>\n\n
-	include optional media in\n 
-	./<presentation dir>/media! 
+	include optional media in\n
+	./<presentation dir>/media!
 EOF
 )
 
@@ -14,9 +14,9 @@ fi
 
 if ! [ $# -eq 1 ]; then
 	cowsay_avail=
-	if type -a cowsay&>2; then
+	if type -a cowsay&>/dev/null; then
 		echo -e $HELP | cowsay -n
-	else 
+	else
 		echo -e $HELP
 	fi
 	exit 1
@@ -31,4 +31,4 @@ if [[ -d ./$1/media ]]; then
 	ARGS=$ARGS\ --include\ ./$1/media
 fi
 
-mdslides ./$1/$1.md $ARGS 
+mdslides ./$1/$1.md $ARGS

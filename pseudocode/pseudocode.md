@@ -2,8 +2,8 @@
 [comment]: # (CODE_THEME = base16/zenburn)
 
 # Cooper CHESS CS: Pseudocode
-August 2024     
-James Ryan, Vaibhav Hariani
+August 2025     
+Vaibhav Hariani
 
 [comment]: # (!!!)
 
@@ -104,9 +104,9 @@ move on;
 
 ```c
 if (condition) {
-    do it, if condition == TRUE;
+    do this;
 } else {
-    do this if that wasnt true;
+    do this;
 }
 move on;
 ```
@@ -130,39 +130,11 @@ int multiplication(int num1, int num2) {
 
 [comment]: # (!!!)
 
-## Picking up from block diagrams...
-
-Block diagrams are basically a visual representation of an *algorithm*
-> An <b>algorithm</b> can be thought of as a series of steps which bring us 
-> to some kind of result.
-
-[comment]: # (|||)
-
-## Primer: Lets rebuild our previous in-class block diagram
-
-Take some time to see if you can rebuild our previous block diagram 
-on deciding whether or not to go grocery shopping. Think about what you 
-need (variables) and whether you have it (if statements). 
-You may work in groups, or work alone.
-
-[comment]: # (|||)
-
-## Example solution
-
-[comment]: # (|||)
-
-## Lets review: Fibonnaci
-
-[comment]: # (!!!)
-
 ## A puzzle! Finding numbers
 
 Ok, heres a scenario: Lets say we have a computer with a clock speed of
 `1 Hz`, or 1 calculation per second. This is our only tool for getting into 
-a room which has a passcode thats a random number between 1 & 100. 
-If we guess wrong, it tells us "higher" or "lower", to indicate what our 
-next guess could be (provided by a built-in `bool guess(int try)` function). 
-How do we break in, taking as little time as possible?
+a room which has a passcode thats a random number between 1 & 100. We have a `int guess(int try)` function, which tells us if our guess is lower (-1), higher (1), or correct (0). How do we break in, taking as little time as possible?
 
 Note:
 if this is too easy or if someone finishes really early, change it up:
@@ -182,11 +154,10 @@ All `n` numbers must add to a *determined* sum to let you in.
 int crack_the_code() 
 {
     for (int ourGuess = 1; ourGuess <= 100; ourGuess = ourGuess + 1) {
-        if (guess(ourGuess) == TRUE) {
+        if (guess(ourGuess) == 0) {
             return ourGuess;
         }
     } 
-    
     return 9001;
 }
 ```
@@ -198,15 +169,6 @@ result. However, its not exactly efficient, since it just works up from
 the absolute lowest number until we find what we want. 
 
 We can do better!!!
-
-[comment]: # (|||)
-
-## Binary search
-
-Remember how we said this door tells us whether we should guess "higher" or
-"lower"? Well, it does that with another function: `int direction(int)`.
-If `direction` returns `1`, we go higher. If its `-1`, we go lower. 
-Otherwise, we are at the number we want.
 
 [comment]: # (|||)
 
@@ -224,7 +186,7 @@ int crack_the_code_V2()
     while (lowestPossible <= highestPossible) {
         // take the average of our lowest possible & highest possible code
         int ourGuess = (lowestPossible + highestPossible) / 2; // 50
-        int goHigher = direction(ourGuess);
+        int goHigher = guess(ourGuess);
  
         if (goHigher == 1) { 
             lowestPossible = ourGuess + 1; // we must go higher
@@ -245,6 +207,6 @@ Homework: 2 problems. Email/teams with questions or solutions.
 1) You're trying to save up for a house (with that fancy post-Cooper salary). 
     Write pseudocode for a function that accepts a salary, a saving percentage, and a home cost. Show how many months it will take to buy the home, given your savings. Assume that you deposit a percentage monthly, and that all money you deposit increases in value by 3% every year (divide by 12 for every month).
 [comment]: # (!!!)
-2) Challenge (Optional & Unexpected): In the towers of hanoi problem, there are 3 pegs. The first peg contains N disks, each one slightly larger than the one before it. You must move all the disks to the last peg. 
+2) Challenge (Optional & Unexpected): In the towers of hanoi problem, there are 3 pegs. The first peg contains N disks, each one slightly larger than the one before it. You must move all the disks to the last peg. A smaller disk cannot be placed on top of a larger disk.
 
-Don't waste time on number two if you can't figure it out: It's the subject of our final lecture!
+ Don't waste time on number two if you can't figure it out: It's the subject of our final lecture!

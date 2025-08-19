@@ -21,11 +21,11 @@ Throughout the lecture, please do not be afraid to ask any questions!
 
 - This crash course is designed for you to learn how to break down a CS problem, and approach it!
 
-- For some of you, these lessons might seem unnecessary. 
-- For others, this might be too much. 
-- Work with each other, and I hope everyone comes out of this with something.
+- For some of you, these may be too easy, and for others, it will be a lot. 
+- Work with each other, and you'll all come out with something.
 - Homework: I'm not grading anything, but it should help drill things home! 
 
+Note: This is a college class, and it's not graded. I'm not here to make you learn anything, but I'm more than willing to help if you need it. 
 [comment]: # (|||)
 ### What is a programming language? 
 
@@ -34,14 +34,14 @@ Throughout the lecture, please do not be afraid to ask any questions!
 ### What are they good for?
 
 [comment]: # (|||)
-A programming language allows us, programmers/computer scientists, to define algorithms that computers can follow.
+A programming language allows us, programmers/computer scientists, to define __ALGORITHMS__.
 
 [comment]: # (!!!)
-- Algorithms are sets of rules to be followed, that allow us (or machines) to complete certain tasks. 
+- Algorithms are sets of rules to be followed, allowing us(or machines) to complete tasks. 
 
-- Before we get into programming (and CS), let's talk about some simple algorithms you use all the time. 
+- Before we get into programming (and CS), let's talk about some simple algorithms you've used. 
 
-- Then, we'll learn some of the tools computer scientists use to define algorithms.   
+- Then, we'll learn some tools computer scientists use to define algorithms, like...           
 
 [comment]: # (|||)
 ## Lesson 1.1: Flowcharts
@@ -124,7 +124,8 @@ Flowcharts are useful, but it's very difficult to express waiting, or triggers, 
 - If I'm trying to design a robot to walk around New York, I need to show that it will stop at a red hand, and keep checking until we see a white figure.  
 
 [comment]: # (|||)
-For these problems, we can use state machines! State machines are considerably simpler to build: only two things to consider (actions, triggers).
+For these problems, we can use state machines! 
+Note: State machines are considerably simpler to build: only two things to consider (actions, triggers).
 
 [comment]: # (|||)
 - List our different triggers and actions:
@@ -139,11 +140,9 @@ For these problems, we can use state machines! State machines are considerably s
 
 [comment]: # (!!!)
 Your Turn: Build a state machine for a self-driving car. 
-
-Don't worry about hitting every single scenario: the overlying idea should be expressed. 
+Note: Don't worry about hitting every single scenario: the overlying idea should be expressed. 
 
 
 [comment]: # (!!!)
 Homework: 
     Take an everyday task, like the ones we've discussed, and express it as a both a flowchart and a state machine. Reach out to me on teams, discord, or email. We'll talk about it tomorrow.
-    

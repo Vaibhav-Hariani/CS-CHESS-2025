@@ -61,10 +61,9 @@ implement our goals into code.
 [comment]: # (!!!)
 
 ## Ok, how do I start making one of these?
-
-- Determine the problem
-- Consider each factor involved
-- What are the inputs?
+Note:
+- What are the inputs/entry states?
+- Consider every factor involved that creates a fork, or splits decisions.
 - From that, consider the steps involved to process your input into an output, 
 from start to end.
 

@@ -55,8 +55,7 @@ For now, just describe whats going on, theres a problem posed, and its being sol
 
 Flowcharts let us take large, complex problems, and break them down into chunks.
 
-In the context of computer science, we can use these to think about how to 
-implement our goals into code.
+Note: In the context of computer science, we can use these to think about how to implement our goals into code.
 
 [comment]: # (!!!)
 
